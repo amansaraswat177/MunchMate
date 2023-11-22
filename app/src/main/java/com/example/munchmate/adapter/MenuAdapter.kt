@@ -15,7 +15,6 @@ class MenuAdapter(private val menuItems:MutableList<String>,private val menuItem
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         TODO("Not yet implemented")
     }
-    override fun getItemCount(): = menuItems.size
     inner class MenuViewHolder {
 
     }
