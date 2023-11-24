@@ -1,14 +1,11 @@
 package com.example.munchmate
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.munchmate.adapter.CartAdapter
 import com.example.munchmate.adapter.MenuAdapter
-import com.example.munchmate.databinding.FragmentCartBinding
 import com.example.munchmate.databinding.FragmentMenuBottomSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
