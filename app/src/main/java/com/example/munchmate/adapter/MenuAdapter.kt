@@ -1,21 +1,34 @@
 package com.example.munchmate.adapter
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.munchmate.databinding.MenuItemBinding
 
-class MenuAdapter(private val menuItems:MutableList<String>,private val menuItemPrice:MutableList<String>,private val MenuImage:MutableList<Int>):RecyclerView.Adapter<MenuAdapter.MenuViewHolder> {
+class MenuAdapter(private val menuItemsName:MutableList<String>,private val menuItemPrice:MutableList<String>,private val MenuImage:MutableList<Int>):
+    RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
-        TODO("Not yet implemented")
+      val binding = MenuItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        return MenuViewHolder(binding)
     }
 
 
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
-        TODO("Not yet implemented")
+       holder.bind(position)
     }
-    inner class MenuViewHolder {
+
+    override fun getItemCount(): Int = menuItemsName.size
+    inner class MenuViewHolder (private val binding: MenuItemBinding): RecyclerView.ViewHolder(binding.root) {
+        fun bind(position: Int) {
+            binding.apply {
+                menufoodName.text = menuItemsName[position]
+                menuPrice.text = menuItemPrice[position]
+                menuImage.setImageResource(MenuImage[position])
+            }
+        }
 
     }
 }
