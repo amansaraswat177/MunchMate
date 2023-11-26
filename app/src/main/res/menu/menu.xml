@@ -12,7 +12,7 @@
         android:icon="@drawable/icons8_search"/>
     <item android:title="History"
         android:id="@+id/historyFragment2"
-        android:icon="@drawable/_26655_history_icon"/>
+        android:icon="@drawable/historyicon"/>
     <item android:title="Profile"
         android:id="@+id/profileFragment2"
         android:icon="@drawable/profileicon"/>

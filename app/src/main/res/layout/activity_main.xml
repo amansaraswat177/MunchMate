@@ -19,22 +19,22 @@
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/aclonica"
         android:text="Explore your favorite food"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/notificationButton"
         android:layout_width="32dp"
         android:layout_height="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="@+id/textView18"
-        app:srcCompat="@android:drawable/ic_popup_reminder" />
+        app:srcCompat="@drawable/notificationbell" />
 
     <fragment
         android:id="@+id/fragmentContainerView"
