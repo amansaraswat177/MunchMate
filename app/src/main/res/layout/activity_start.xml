@@ -9,13 +9,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/mmlogo" />
 
     <TextView
         android:id="@+id/textView3"
@@ -48,9 +48,12 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Designed By\nAman,Anjali,Aman"
+        android:fontFamily="@font/aclonica"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="From cravings to doorstep, savor convenience with every order. Bon appétit!"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/textcolor"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/nextButton"
