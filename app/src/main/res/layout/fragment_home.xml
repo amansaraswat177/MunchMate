@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+android:background="@color/white"
     tools:context=".Fragment.HomeFragment">
 
 
@@ -35,6 +35,7 @@
         android:id="@+id/popularRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        tools:listitem="@layout/popular_item"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
